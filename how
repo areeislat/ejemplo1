@@ -1,0 +1,49 @@
+[33mcommit ff332446fda45621ca51155ad8f4f6c4595144a3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: unknown <SSDD@PNAWSA05LC54423.duoc.acad>
+Date:   Sat Mar 29 13:05:51 2025 -0300
+
+    se agregan path
+
+[1mdiff --git a/src/main/java/com/example/PrimerEjemploApplication.java b/src/main/java/com/example/proyecto/PrimerEjemploApplication.java[m
+[1msimilarity index 90%[m
+[1mrename from src/main/java/com/example/PrimerEjemploApplication.java[m
+[1mrename to src/main/java/com/example/proyecto/PrimerEjemploApplication.java[m
+[1mindex 2eace6b..f2759c1 100644[m
+[1m--- a/src/main/java/com/example/PrimerEjemploApplication.java[m
+[1m+++ b/src/main/java/com/example/proyecto/PrimerEjemploApplication.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-package com.example;[m
+[32m+[m[32mpackage com.example.proyecto;[m
+ [m
+ import org.springframework.boot.SpringApplication;[m
+ import org.springframework.boot.autoconfigure.SpringBootApplication;[m
+[1mdiff --git a/src/main/java/com/example/proyecto/controller/Proyecto1Controller.java b/src/main/java/com/example/proyecto/controller/Proyecto1Controller.java[m
+[1mindex 6e5caa8..e75e7c2 100644[m
+[1m--- a/src/main/java/com/example/proyecto/controller/Proyecto1Controller.java[m
+[1m+++ b/src/main/java/com/example/proyecto/controller/Proyecto1Controller.java[m
+[36m@@ -2,7 +2,6 @@[m [mpackage com.example.proyecto.controller;[m
+ [m
+ import org.springframework.web.bind.annotation.GetMapping;[m
+ import org.springframework.web.bind.annotation.RestController;[m
+[31m-import org.springframework.web.bind.annotation.RequestParam;[m
+ [m
+ [m
+ [m
+[36m@@ -10,8 +9,15 @@[m [mimport org.springframework.web.bind.annotation.RequestParam;[m
+ public class Proyecto1Controller {[m
+ [m
+     @GetMapping("/hola")[m
+[31m-    public String getMethodName(@RequestParam String param) {[m
+[31m-        return new String();[m
+[32m+[m[32m    public String holaMundo() {[m
+[32m+[m[32m        return "Holissss Mundo";[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    @GetMapping("/chao")[m
+[32m+[m[32m    public String otrometodo() {[m
+[32m+[m[32m        return "adiosito";[m
+[32m+[m
+     }[m
+     [m
+ [m
